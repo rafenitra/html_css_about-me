@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#149ddd00,#149ddd);
+    border-radius: 6px;
+} 
+::-webkit-scrollbar-thumb:hover{
+background: linear-gradient(#ffffff00,#173b6c);
+}
+body{
+    box-sizing: border-box;
+}
+.sidebar{
+    background-color: rgb(1, 8, 20);
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+}
+.sidebar img{
+    max-width:150px;
+    height: auto;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+.sidebar ul{
+    text-align: center;
+    margin-top: 50px;
+}
+.sidebar li{
+    margin:10px;
+}
+.sidebar li a{
+    font-size: 20px;
+    color: whitesmoke;
+}
+#fond{
+    height: 100vh;
+    width: 100%;    
+    background-image:url('../img/sary.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#filtre{
+   height: 100vh;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   text-align: center;
+}
+#filtre p{
+    align-items: center;
+    color: aliceblue;
+    font-size: 60px;
+    text-shadow: 2px;
+}
+.main{
+    margin-left: 200px;
+}
+.sidebar li a:hover{
+    text-decoration: none;
+    font-size: 22px;
+    border-bottom: whitesmoke solid 3px;
+    transition: 1,4s;   
+}
+
+section{
+    margin: 50px;
+}
+section h2{
+    color: #173b6c;
+}
+.tsipika{
+    height: 3px;
+    width: 80px;
+    background-color:#149ddd;
+}
+.manomboka{
+    margin-top: 30px;
+}
+section p{
+    font-size: 18px;
+    color: rgb(1, 8, 20);
+}
+section span{
+    font-weight: bold;
+}
+
+/*animation de l'autotext*/
+#autotext{
+    border-right: #b11e04 solid 2px;
+    letter-spacing: 0.05em;
+    color: whitesmoke;
+    animation: clignotement 0.75s step-end infinite;
+    margin-top: 300px;
+}
+@keyframes clignotement {
+    from,
+    to{
+        border-color: transparent;
+    }
+    50%{
+        border-color: #b11e04;
+    }
+}
